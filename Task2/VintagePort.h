@@ -1,5 +1,5 @@
 #ifndef VINTAGEPORT_H_
-#define VINTAGEPORT_H_ // а это - бутылка четкого вина (стайл обязательно винтаж)
+#define VINTAGEPORT_H_ // a bottle of chetkiy vine
 
 
 #include "Port.h"

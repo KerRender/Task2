@@ -1,5 +1,5 @@
 #ifndef PORT_H_
-#define PORT_H_ //короче, это - бутылка вина
+#define PORT_H_ // a bottle of vine
 
 #include <iostream>
 
