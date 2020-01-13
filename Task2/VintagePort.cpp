@@ -27,6 +27,7 @@ VintagePort& VintagePort::operator=(const VintagePort& vp)
 {
     if (this == &vp)
         return *this;
+    Port::operator=(vp);
     delete[] nickname;
     nickname = new char[strlen(vp.nickname) + 1];
     strcpy(nickname, vp.nickname);
@@ -43,5 +44,5 @@ void VintagePort::Show() const
 
 ostream& operator<<(ostream& os, const VintagePort& vp)
 {
-    return os << Port(vp) << ", " << vp.nickname << ", " << vp.year;
+    return os << (Port) vp << ", " << vp.nickname << ", " << vp.year;
 }
